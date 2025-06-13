@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //8. Construa um programa onde o usuário digitará quatro notas escolares de um aluno referente aos 4 bimestres do ano e o programa irá calcular a média anual, caso seja menor que 6, exibirá na tela: “Aluno Reprovado”. Caso seja maior ou igual a 6 exibirá na tela: “Aluno Aprovado”.
+        
+        alert("Vamos calcular a média anual das notas de um aluno");
+        let nomedoaluno = Number(prompt("Digite o nome do aluno: "));
+        
+        let nota_1bim = Number(prompt("Digite a nota do primeiro bimestre: "));
+        let nota_2bim = Number(prompt("Digite a nota do segundo bimestre:"));
+        let nota_3bim = Number(prompt("Digite a nota do terceiro bimestre: "));
+        let nota_4bim = Number(prompt("Digite a nota do quarto bimestre: "));
+
+        let media_anual = ((nota_1bim + nota_2bim + nota_3bim + nota_4bim) / 4);
+    
+        if (media_anual>=6){
+            alert("Aluno aprovado!")
+        }
+        else {
+            alert("Aluno reprovado!")
+        }
+
+    </script>
+</body>
+</html>

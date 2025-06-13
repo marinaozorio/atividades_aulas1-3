@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //5. Construa uma página/programa onde o usuário irá digitar o seu salário. O programa irá calcular e escrever, na tela, quanto descontará de vale-transporte (6%), plano de saúde (3%) e quanto sobrará do salário.
+        
+        alert("Vamos calcular o seu salário!");
+
+        let nome = prompt("Digite o seu nome:");
+        let salario = Number(prompt("Digite o seu salário atual:"));
+        
+        alert("Será descontado 6% do vale-transporte e 3% do plano de saúde");
+        alert("Calculando o desconto do vale transporte... ");
+        alert("Calculando o desconto do plano de saúde...");
+
+        //Exemplos
+        let desconto_vale_transporte = ((6 / 100) * salario); //60
+        let salario_com_desconto_do_vt = (salario - desconto_vale_transporte); //960
+
+        let desconto_plano_de_saude = ((3 /100) * salario); //30
+        let salario_com_desconto_ps = (salario - desconto_plano_de_saude); //930
+
+        let salario_total_com_desconto = (salario - desconto_vale_transporte - desconto_plano_de_saude); //1000-60-30
+        
+        alert("O seu salário final é de "+salario_total_com_desconto+" reais!");
+    </script>
+</body>
+</html>
+
+<!--
+
+-->
